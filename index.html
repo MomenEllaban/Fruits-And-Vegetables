@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicacy</title>
+
+    <!-- https://boxicons.com/ -->
+    <!-- link to Box_Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+    <!-- https://swiperjs.com/demos -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Demo styles -->
+    <style>
+        .autoplay-progress {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            z-index: 10;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--swiper-theme-color);
+        }
+
+        .autoplay-progress svg {
+            --progress: 0;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            stroke-width: 4px;
+            stroke: var(--swiper-theme-color);
+            fill: none;
+            stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+            stroke-dasharray: 125.6;
+            transform: rotate(-90deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-basket'></i>Delicacy</a>
+        <!-- menu icon -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- nav list -->
+
+
+
+
+        <ul class="navbar">
+            <li> <a href="#home" class="home_active">Home</a></li>
+            <li> <a href="#categories">Categories</a></li>
+            <li> <a href="#products">Products</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#customers">Customers</a></li>
+
+        </ul>
+
+        <!-- profile -->
+
+        <div class="profile">
+            <img src="images/IMG_7256-01.jpeg" alt="">
+            <span>Momen Ellaban</span>
+            <i class='bx bx-caret-down'></i>
+        </div>
+
+    </header>
+
+
+
+
+
+    <!-- home -->
+
+
+    <section class="home swiper" id="home">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <!-- slide 1 -->
+                <div class="home_text">
+                    <span> we are delicacy</span>
+                    <h1>Lorem, ipsum <br>Lorem, ipsum.<br>Lorem, ipsum dolor.</h1>
+                    <a href="#" class="btn">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <div>
+                    <img src="images/slide1.png" alt="">
+                </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="swiper-slide container">
+
+                <div class="home_text">
+                    <span> we are delicacy</span>
+                    <h1>Lorem, ipsum <br>Lorem, ipsum.<br>Lorem, ipsum dolor.</h1>
+                    <a href="#" class="btn">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="images/slide2.png" alt="">
+            </div>
+
+            <!-- slide 3 -->
+            <div class="swiper-slide container">
+
+                <div class="home_text">
+                    <span> we are delicacy</span>
+                    <h1>Lorem, ipsum <br>Lorem, ipsum.<br>Lorem, ipsum dolor.</h1>
+                    <a href="#" class="btn">Shop Now <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="images/slide3.png" alt="">
+            </div>
+
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+        </div>
+
+    </section>
+
+    <!-- categories -->
+
+    <section class="categories" id="categories">
+
+        <div class="heading">
+            <h1>Lorem, ipsum dolor. <br> <span>categories</span></h1>
+            <a href="#" class="btn">See All <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+
+
+        <!-- container content -->
+
+        <div class="categories_contaner">
+
+            <!-- box 1 -->
+            <div class="box box1">
+                <img src="images/categorie1.png" alt="">
+                <h2>fruits</h2>
+                <span>22 items</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+
+            <!-- box 2 -->
+            <div class="box box2">
+                <img src="images/categorie2.png" alt="">
+                <h2>vegetables</h2>
+                <span>22 items</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+
+            <!-- box 3 -->
+            <div class="box box3">
+                <img src="images/categorie3.png" alt="">
+                <h2>drinks</h2>
+                <span>22 items</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+
+            <!-- box 4 -->
+            <div class="box box4">
+                <img src="images/categorie4.png" alt="">
+                <h2>fresh nuts</h2>
+                <span>22 items</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+
+            <!-- box 5 -->
+            <div class="box box5">
+                <img src="images/categorie5.png" alt="">
+                <h2> spices</h2>
+                <span>22 items</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- products -->
+
+    <section class="products" id="products">
+        <div class="heading">
+            <h1>our popular dolor. <br> <span>products</span></h1>
+            <a href="#" class="btn">shop now <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+
+
+        <div class="products_contaner">
+
+            <!-- box 1 -->
+            <div class="box ">
+                <img src="images/categorie1.png" alt="">
+                <span>fresh items</span>
+                <h2>farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price"> $7.99 <span>/Kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <div class="discount">-25%</div>
+            </div>
+
+            <!-- box 2 -->
+            <div class="box ">
+                <img src="images/categorie1.png" alt="">
+                <span>fresh items</span>
+                <h2>farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price"> $7.99 <span>/Kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <div class="discount">-25%</div>
+            </div>
+
+
+            <!-- box 3 -->
+            <div class="box ">
+                <img src="images/categorie1.png" alt="">
+                <span>fresh items</span>
+                <h2>farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price"> $7.99 <span>/Kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <div class="discount">-25%</div>
+            </div>
+
+            <!-- box 4 -->
+            <div class="box ">
+                <img src="images/categorie1.png" alt="">
+                <span>fresh items</span>
+                <h2>farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price"> $7.99 <span>/Kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <div class="discount">-25%</div>
+            </div>
+
+            <!-- box 5 -->
+            <div class="box ">
+                <img src="images/categorie1.png" alt="">
+                <span>fresh items</span>
+                <h2>farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price"> $7.99 <span>/Kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <div class="discount">-25%</div>
+            </div>
+
+            <!-- box 6 -->
+            <div class="box ">
+                <img src="images/categorie1.png" alt="">
+                <span>fresh items</span>
+                <h2>farm fresh organic <br>fruits 250g</h2>
+                <h3 class="price"> $7.99 <span>/Kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <div class="discount">-25%</div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <!--  About  -->
+
+    <section class="about" id="about">
+
+        <img src="images/about.jpg" alt="">
+        <div class="about_text">
+            <span>About Us</span>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi enim, veniam modi facere fugiat
+                praesentium recusandae accusantium repudiandae ratione porro!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, optio adipisci?</p>
+
+            <a href="#" class="btn">Learn more <i class='bx bx-right-arrow-alt'></i></a>
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+    <!-- customers -->
+
+    <section class="customers" id="customers">
+
+        <h2> why Customer's love us?</h2>
+
+
+
+        <!-- customers content  -->
+
+        <div class="customer_container">
+            <!-- review 1 -->
+            <div class="box">
+                <i class='bx bxs-quote-alt-left'></i>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sequi!</p>
+
+                <div class="review_profile">
+                    <img src="images/IMG_7256-01.jpeg" alt="">
+                    <h3>Momen Ellaban</h3>
+
+                </div>
+
+            </div>
+            <!-- review 2 -->
+            <div class="box">
+                <i class='bx bxs-quote-alt-left'></i>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sequi!</p>
+
+                <div class="review_profile">
+                    <img src="images/IMG_7256-01.jpeg" alt="">
+                    <h3>Momen Ellaban</h3>
+
+                </div>
+
+            </div>
+            <!-- review 3 -->
+            <div class="box">
+                <i class='bx bxs-quote-alt-left'></i>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sequi!</p>
+
+                <div class="review_profile">
+                    <img src="images/IMG_7256-01.jpeg" alt="">
+                    <h3>Momen Ellaban</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- footer -->
+
+    <footer></footer>
+
+    <section class="footer" id="footer">
+
+
+        <div class="footer_box">
+            <a href="#" class="logo"><i class='bx bxs-basket'></i>Delicacy</a>
+            <p>Lorem ipsum dolor <br> sit amet consectetur.</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer_box">
+            <h2>Categories</h2>
+            <a href=""> fruits & vegetables</a>
+            <a href=""> Dairy products</a>
+            <a href=""> package food</a>
+            <a href=""> Bevarage </a>
+
+        </div>
+
+        <div class="footer_box">
+            <h2>Useful Links</h2>
+            <a href=""> Payment & Tax</a>
+            <a href=""> Terms of use</a>
+            <a href=""> My blog</a>
+            <a href=""> Return policy </a>
+
+        </div>
+
+
+        <div class="footer_box">
+            <h2>Newsletter</h2>
+            <p>Get 10% Discount with <br> Email Newsletter</p>
+
+            <form action="">
+                <i class='bx bxs-envelope'></i>
+                <input type="email" name="" placeholder="Enter your email">
+                <i class='bx bx-arrow-back bx-rotate-180'></i>
+
+            </form>
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+    <!-- copyright -->
+
+
+    <div class="copyright">
+        <p> &#169; HealthyCode All Right Reserved. </p>
+    </div>
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- link to js -->
+    <script src="main.js"></script>
+</body>
+
+</html>
